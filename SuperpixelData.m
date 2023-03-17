@@ -63,7 +63,7 @@ fprintf('Compose training data\n');
 [trainSegFeat,trainSegGT] = composeTrainData(matFold,allImgList,testImgIdx,iCV);
 
 fprintf('Feature selection\n');
-selFeatLen = 50;%519   % number of selected features.
+selFeatLen = 50;   % number of selected features.
 SelFeaIdx = featureSel(matFold,trainSegFeat,trainSegGT,numClass,selFeatLen,iCV);
 
 % load('all-feature-mat-v2.mat','v2');
